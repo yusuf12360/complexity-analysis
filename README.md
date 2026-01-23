@@ -8,7 +8,7 @@ In Competitive Programming, we often use advanced algorithms because they are kn
 I created this repository because I want to achieve **intellectual certainty**. By proving mathematically that an algorithm is $O(N \log N)$ or $O(E \sqrt{V})$ myself, I can ensure that my solutions are truly efficient and will pass within the given time limits. This process helps me turn 'black box' algorithms into tools that I fully understand.
 
 ### Coming Soon
-* Hopcroft-Karp Algorithm
+* Hopcroft-Karp Algorithm.
 * Treap.
 * Mo's Algorithm
 * DP DnC

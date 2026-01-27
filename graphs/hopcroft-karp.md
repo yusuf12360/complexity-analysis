@@ -4,8 +4,7 @@ The Hopcroft-Karp algorithm is a robust algorithm designed to solve the Maximum 
 
 ## Terminology
 
-- **Graph:** A set of vertices and edges (pairs of vertices).
-- **Path:** A sequence of edges forming a line graph.
+- **Path:** A set of edges forming a line graph.
 - **Matching:** A set of edges such that no two distinct edges share a common vertex. In other words, every vertex is connected to at most one edge in the matching. An edge is called a matched edge if and only if it exists in the current matching.
 - **Alternating Path (w.r.t. Matching $M$):** A path that alternates between an edge that exists in Matching $M$ and an edge that does not.
 - **Augmenting Path (w.r.t. Matching $M$):** An alternating path that starts and ends with vertices that are not covered by Matching $M$.

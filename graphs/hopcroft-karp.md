@@ -44,7 +44,7 @@ Note that a path in category $c$ starts and ends with an edge from $M_2$. Since 
 
 We can define the sizes based on these components:
 - The difference $|M_2| - |M_1|$ is determined only by paths of type $c$ and $d$, because $a$ and $b$ contribute equal edges.
-- Specifically, each path in $c$ adds $1$ to the count for $M_2$, and each path in $d$ subtracts $1$.
+- Specifically, each path in $c$ adds $1$ to the count, and each path in $d$ subtracts $1$.
 
 Therefore:
 $$|M_2| - |M_1| = c - d$$

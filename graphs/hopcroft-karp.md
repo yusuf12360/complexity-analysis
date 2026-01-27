@@ -181,7 +181,14 @@ $$
 m \cdot \sqrt{V} < \sum_{i = 1}^{k} |Q_i|
 $$
 
-Consider the total vertices used in $Q$. Then $\displaystyle \sum_{i = 1}^{k} |Q_i| \leq V$. Hence:
+Consider the total vertices used in $Q$. Then: 
+
+$$
+\displaystyle \sum_{i = 1}^{k} |Q_i| \leq V
+$$
+
+Hence:
+
 $$
 m \sqrt{V} < V
 $$

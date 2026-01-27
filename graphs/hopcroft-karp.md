@@ -21,6 +21,8 @@ The Hopcroft-Karp algorithm is a robust algorithm designed to solve the Maximum 
    - Add the number of augmented paths in this phase to `ans`.
 3. Return `ans` as the MCBM (Maximum Cardinality Bipartite Matching).
 
+The C++ implementation of the algorithm is available [here](https://github.com/yusuf12360/cp-library/blob/main/graphs/hopcroft-karp.cpp)
+
 ## Lemmas
 
 The proof of the $O(E \sqrt{V})$ time complexity relies heavily on the fact that there are at most $O(\sqrt{V})$ phases in this algorithm, where $V$ is the number of vertices and $E$ is the number of edges. Each phase has a time complexity of $O(E)$ (BFS for searching for the shortest augmenting paths and DFS for augmenting them). First, let us prove several lemmas.

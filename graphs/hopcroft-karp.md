@@ -175,16 +175,20 @@ Let:
 
 According to **Lemma 1**, $M \oplus M_{\text{max}}$ contains at least $c$ vertex-disjoint augmenting paths w.r.t. $M$. Let $m \geq c$ be the number of such augmenting paths and $Q_1, Q_2, \dots, Q_m$ be these paths.
 
-According to **Lemma 2**, the length of the shortest augmenting path will be greater than $\sqrt{V}$ w.r.t. $M$. Thus, $|Q_i| > \sqrt{V}$ for all $1 \leq i \leq m$. In other words:
+According to **Lemma 2**, the length of the shortest augmenting path will be greater than 
+$
+\sqrt{V}$ w.r.t. $M$. Thus, $|Q_i| > \sqrt{V} \ \ \forall \ \ 1 \leq i \leq m
+$
+. In other words:
 
 $$
-m \cdot \sqrt{V} < \sum_{i = 1}^{k} |Q_i|
+m \cdot \sqrt{V} < \sum_{i = 1}^{m} |Q_i|
 $$
 
 Consider the total vertices used in $Q$. Then: 
 
 $$
-\displaystyle \sum_{i = 1}^{k} |Q_i| \leq V
+\displaystyle \sum_{i = 1}^{m} |Q_i| \leq V
 $$
 
 Hence:

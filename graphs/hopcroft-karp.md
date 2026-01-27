@@ -47,6 +47,7 @@ We can define the sizes based on these components:
 - Specifically, each path in $c$ adds $1$ to the count, and each path in $d$ subtracts $1$.
 
 Therefore:
+
 $$
 |M_2| - |M_1| = c - d
 $$
@@ -76,36 +77,83 @@ Let:
 Our goal is to prove that $|Q| > k$. We will prove this by contradiction by first assuming that $|Q| \leq k$.
 
 First, consider the symmetric difference of the matchings:
-$$M'' \oplus M' = Q$$
-$$M'' \oplus (M \oplus P) = Q$$
-$$M'' \oplus M = P \oplus Q$$
+
+$$
+M'' \oplus M' = Q
+$$
+
+$$
+M'' \oplus (M \oplus P) = Q
+$$
+
+$$
+M'' \oplus M = P \oplus Q
+$$
 
 Now, let's look at the size of the matchings:
 - Augmenting $P$ (which has $n$ paths) increases the matching size by $n$:
-$$|M'| = |M| + n$$
+
+$$
+|M'| = |M| + n
+$$
+
 - Augmenting $Q$ (which is 1 path) increases the matching size by 1:
-$$|M''| = |M'| + 1$$
+
+$$
+|M''| = |M'| + 1
+$$
+
 - Therefore:
-$$|M''| - |M| = n + 1$$
+
+$$
+|M''| - |M| = n + 1
+$$
 
 According to **Lemma 1**, since $|M''| - |M| = n + 1$, the graph $M'' \oplus M$ must contain at least **$n + 1$ vertex-disjoint augmenting paths w.r.t. $M$**. Let's call the set of these paths $R$.
 
 We know that in phase $i$, the length of the shortest augmenting path was $k$. Therefore, every augmenting path w.r.t. $M$ must have a length of at least $k$. Since $M \oplus M'' = P \oplus Q$, the total number of edges in $P \oplus Q$ is the sum of the lengths of these paths in $R$.
-$$|P \oplus Q| \geq (\text{number of paths}) \times (\text{minimum length})$$
-$$|P \oplus Q| \geq (n + 1) \cdot k \quad \dots \quad (1)$$
+
+$$
+|P \oplus Q| \geq (\text{number of paths}) \times (\text{minimum length})
+$$
+
+$$
+|P \oplus Q| \geq (n + 1) \cdot k \quad \dots \quad (1)
+$$
 
 Now, let's calculate the size of $|P \oplus Q|$ using set theory:
-$$|P \oplus Q| = |P| + |Q| - 2|P \cap Q|$$
+
+$$
+|P \oplus Q| = |P| + |Q| - 2|P \cap Q|
+$$
+
 We know that $|P| = n \cdot k$ (since $P$ consists of $n$ paths of length $k$). Using our contradiction assumption $|Q| \leq k$:
-$$|P \oplus Q| \leq n \cdot k + k - 2|P \cap Q|$$
-$$|P \oplus Q| \leq (n + 1) \cdot k - 2|P \cap Q| \quad \dots \quad (2)$$
+
+$$
+|P \oplus Q| \leq n \cdot k + k - 2|P \cap Q|
+$$
+
+$$
+|P \oplus Q| \leq (n + 1) \cdot k - 2|P \cap Q| \quad \dots \quad (2)
+$$
 
 Combining inequalities (1) and (2):
 
-$$(n + 1) k \leq |P \oplus Q| \leq (n + 1) k - 2|P \cap Q|$$
-$$(n + 1) k \leq (n + 1) k - 2|P \cap Q|$$
-$$0 \leq -2|P \cap Q|$$
-$$|P \cap Q| \leq 0$$
+$$
+(n + 1) k \leq |P \oplus Q| \leq (n + 1) k - 2|P \cap Q|
+$$
+
+$$
+(n + 1) k \leq (n + 1) k - 2|P \cap Q|
+$$
+
+$$
+0 \leq -2|P \cap Q|
+$$
+
+$$
+|P \cap Q| \leq 0
+$$
 
 Since the size of a set cannot be negative, we must have:
 - $|P \cap Q| = 0$ (They are edge-disjoint).
@@ -128,13 +176,24 @@ Let:
 According to **Lemma 1**, $M \oplus M_{\text{max}}$ contains at least $c$ vertex-disjoint augmenting paths w.r.t. $M$. Let $m \geq c$ be the number of such augmenting paths and $Q_1, Q_2, \dots, Q_m$ be these paths.
 
 According to **Lemma 2**, the length of the shortest augmenting path will be greater than $\sqrt{V}$ w.r.t. $M$. Thus, $|Q_i| > \sqrt{V}$ for all $1 \leq i \leq m$. In other words:
-$$m \cdot \sqrt{V} < \sum_{i = 1}^{k} |Q_i|$$
+
+$$
+m \cdot \sqrt{V} < \sum_{i = 1}^{k} |Q_i|
+$$
 
 Consider the total vertices used in $Q$. Then $\displaystyle \sum_{i = 1}^{k} |Q_i| \leq V$. Hence:
-$$m \sqrt{V} < V$$
-$$m < \frac{V}{\sqrt{V}}$$
+$$
+m \sqrt{V} < V
+$$
+
+$$
+m < \frac{V}{\sqrt{V}}
+$$
 
 We know that $|M_{\text{max}}| - |M| = c$ and $c \leq m$. Therefore: 
-$$|M_{\text{max}}| - |M| < \sqrt{V}$$
+
+$$
+|M_{\text{max}}| - |M| < \sqrt{V}
+$$
 
 **Conclusion:** After $\sqrt{V}$ phases, we only need fewer than $\sqrt{V}$ additional phases to reach MCBM, leading to a maximum of $2\sqrt{V}$ phases in total, with $O(E)$ time spent on BFS and DFS in each phase. Thus, the time complexity of the Hopcroft-Karp Algorithm is $O(E \sqrt{V})$.

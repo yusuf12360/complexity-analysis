@@ -1,6 +1,6 @@
 # Hopcroft-Karp Algorithm's Time Complexity Proof
 
-The Hopcroft-Karp algorithm is a robust algorithm designed to solve the Maximum Cardinality Bipartite Matching (MCBM) problem. It augments along a maximal set of shortest augmenting paths in each phase to ensure O(sqrt V) phases.
+The Hopcroft-Karp algorithm is a robust algorithm designed to solve the Maximum Cardinality Bipartite Matching (MCBM) problem. It augments along a maximal set of shortest augmenting paths in each phase to ensure $O(\sqrt{V})$ phases.
 
 ## Terminology
 

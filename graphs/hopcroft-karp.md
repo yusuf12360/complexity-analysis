@@ -118,7 +118,7 @@ $$
 $$
 
 $$
-|P \oplus Q| \geq (n + 1) \cdot k \quad \dots \quad (1)
+|P \oplus Q| \geq (n + 1) \cdot k \ \dots \ (1)
 $$
 
 Now, let's calculate the size of $|P \oplus Q|$ using set theory:
@@ -134,7 +134,7 @@ $$
 $$
 
 $$
-|P \oplus Q| \leq (n + 1) \cdot k - 2|P \cap Q| \quad \dots \quad (2)
+|P \oplus Q| \leq (n + 1) \cdot k - 2|P \cap Q| \ \dots \ (2)
 $$
 
 Combining inequalities (1) and (2):

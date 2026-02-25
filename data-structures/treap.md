@@ -18,7 +18,7 @@ $$
 
 ## Implementation
 
-By utilizing the expected height of the Treap, we can confidently do many operations in this Treap such as splitting the tree, merging two trees, inserting a node into the tree, deleting it, and many others. Most of its operations are done in $O(\text{height of the Treap})$, which is $O(\log n)$ on average. It is trivial that the probability of a Treap with $n$ nodes (for large $n$) having a height of $\leq 1$ is astronomically small, meaning that the probability of a Treap having a height of $\geq 2 \cdot E[H_n]$ is even smaller, nearly impossible. This is why a Treap is reliable in terms of execution time.
+By utilizing the expected height of the Treap, we can confidently do many operations in this Treap such as splitting the tree, merging two trees, inserting a node into the tree, deleting it, and many others. Most of its operations are done in $O(\text{height of the Treap})$, which is $O(\log n)$ on average. It is trivial that the probability of a Treap with $n$ nodes (for large $n$) having a height of $\leq 1$ is astronomically small, meaning that the probability of a Treap having a height of $\geq 2 \cdot E[H_n]$ is even smaller, nearly impossible. This is why Treaps are reliable in terms of execution time.
 
 The C++ implementation of this data structure is available [here](https://github.com/yusuf12360/cp-library/blob/main/data-structures/implicit-treaps.cpp).
 

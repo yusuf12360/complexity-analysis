@@ -85,7 +85,7 @@ $$
 Using a well-known bounding rule from calculus:
 
 $$
-\sum_{i = 0}^{n - 1} i^3 \leq \int_{0}^{n} x^3 \, dx = \frac{n^4}{4}
+\sum_{i = 0}^{n - 1} i^3 \leq \int_{0}^{n} x^3 \ dx = \frac{n^4}{4}
 $$
 
 Using this to continue the transition:

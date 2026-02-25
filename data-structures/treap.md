@@ -8,7 +8,7 @@ Treap is a versatile data structure that combines Tree (specifically, BST) prope
 - **Random Variable:** A variable representing numerical outcomes of a random phenomenon. Usually written as a capital letter (e.g., $X$).
 - **Expected Value:** The mean/average of all possible numerical outcomes of a random phenomenon. The expected value of a random variable $X$ is denoted as $E[X]$.
 - **Jensen's Inequality:** Given a convex function $f(x)$ and a random variable $X$, the following inequality is always true:
-- **$H_n$:**: A random variable representing the height of a Treap with $n$ nodes.
+- **$H_n$:** A random variable representing the height of a Treap with $n$ nodes.
 
 $$
 f(E[X]) \leq E[f(X)]

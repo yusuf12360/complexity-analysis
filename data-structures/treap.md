@@ -46,7 +46,7 @@ $$
 X_n \leq 2(X_L + X_R)
 $$
 
-Imagine there are $n$ nodes whose keys are sorted from left to right. If we assign a random priority to each node, the probability of any specific node being the root is exactly $\frac{1}{n}$. The probability of $\geq 2$ nodes having the highest priority with the same value is negligible. Based on this probability, using the basic expected value formula, we get:
+Imagine there are $n$ nodes whose keys are sorted from left to right. If we assign a random priority to each node, assuming all priorities are distinct, the probability of any specific node being the root is exactly $\frac{1}{n}$. The probability of $\geq 2$ nodes having the highest priority with the same value is negligible. Based on this probability, using the basic expected value formula, we get:
 
 $$
 E[X_n] \leq \frac{1}{n} \sum_{i = 0}^{n - 1} E[2(X_i + X_{n - 1 - i})]
